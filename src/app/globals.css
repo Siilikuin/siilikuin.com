@@ -1,26 +1,75 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Background colors - lighter values for surfaces */
+  --bg-base: #F1E8E9ff;        /* Lavender Blush - main background */
+  --bg-white: #FEFEFEff;       /* Clean white - card backgrounds */
+  --bg-violet: #E8E5F0ff;      /* Light violet - subtle sections */
+  --bg-gray: #E5E8EFff;        /* Light gray - neutral sections */
+  --bg-seafoam: #E5F7FAff;     /* Seafoam - light blue/green accent sections */
+  
+  /* Foreground colors - darker values for text/content */
+  --fg-violet: #2A2340ff;      /* Dark violet - primary headings (darker than original) */
+  --fg-violet-soft: #433B61ff; /* Original violet - secondary headings */
+  --fg-gray: #4A5268ff;        /* Dark gray - body text (darker than original) */
+  --fg-seafoam: #1A7A8Cff;     /* Dark seafoam - links/accents (much darker) */
+  --fg-white: #FEFEFEff;       /* White - text on dark backgrounds */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Background colors */
+  --color-bg-base: #F1E8E9ff;
+  --color-bg-white: #FEFEFEff;
+  --color-bg-violet: #E8E5F0ff;
+  --color-bg-gray: #E5E8EFff;
+  --color-bg-seafoam: #E5F7FAff;
+  
+  /* Foreground colors */
+  --color-fg-violet: #2A2340ff;
+  --color-fg-violet-soft: #433B61ff;
+  --color-fg-gray: #4A5268ff;
+  --color-fg-seafoam: #1A7A8Cff;
+  --color-fg-white: #FEFEFEff;
+  
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-nunito);
+  --font-mono: var(--font-jetbrains-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Inverted for dark mode */
+    --bg-base: #1A1625ff;
+    --bg-white: #2A2340ff;
+    --bg-violet: #332C4Aff;
+    --bg-gray: #3A3F52ff;
+    --bg-seafoam: #1A4A54ff;
+    
+    --fg-violet: #E8E5F0ff;
+    --fg-violet-soft: #C8C3D8ff;
+    --fg-gray: #A8B3D1ff;
+    --fg-seafoam: #84DEF0ff;
+    --fg-white: #FEFEFEff;
+  }
+  
+  @theme inline {
+    --color-bg-base: #1A1625ff;
+    --color-bg-white: #2A2340ff;
+    --color-bg-violet: #332C4Aff;
+    --color-bg-gray: #3A3F52ff;
+    --color-bg-seafoam: #1A4A54ff;
+    
+    --color-fg-violet: #E8E5F0ff;
+    --color-fg-violet-soft: #C8C3D8ff;
+    --color-fg-gray: #A8B3D1ff;
+    --color-fg-seafoam: #84DEF0ff;
+    --color-fg-white: #FEFEFEff;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg-base);
+  color: var(--fg-gray);
   font-family: Arial, Helvetica, sans-serif;
 }
