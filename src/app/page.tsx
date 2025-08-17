@@ -1,34 +1,14 @@
 import Image from "next/image";
 import CloudBackground from "./CloudBackground";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-bg-base relative">
       <CloudBackground />
-      <header className="p-8 md:p-12 relative z-10">
-        <nav className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="flex items-center gap-3">
-            <Image 
-              src="/siili.png" 
-              alt="Siilikuin mascot" 
-              width={48} 
-              height={48}
-              className="rounded-lg"
-            />
-            <div>
-              <h1 className="text-3xl font-bold text-fg-violet">Siilikuin</h1>
-              <p className="text-sm text-fg-gray">Cloud, compassion, code.</p>
-            </div>
-          </div>
-          <div className="flex gap-6">
-            <a href="#" className="text-fg-gray hover:text-fg-seafoam transition-colors">Services</a>
-            <a href="#" className="text-fg-gray hover:text-fg-seafoam transition-colors">About</a>
-            <a href="#" className="text-fg-gray hover:text-fg-seafoam transition-colors">Contact</a>
-          </div>
-        </nav>
-      </header>
+      <Header />
 
-      <main className="px-8 md:px-12 py-16 max-w-7xl mx-auto relative z-10">
+      <main className="px-8 md:px-12 py-16 max-w-7xl mx-auto relative z-10 mt-20">
         <section className="mb-20">
           <h2 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
             Software Consultancy Excellence

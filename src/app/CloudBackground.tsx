@@ -19,16 +19,15 @@ const CloudBackground = () => {
       Z
     `,
     
-    // Type 2: Abrupt edges
+    // Type 2: Soft fade left, tapered right
     (width: number, height: number) => `
-      M ${width * 0.01} ${height * 0.85}
-      Q ${width * 0.01} ${height * 0.3}, ${width * 0.12} ${height * 0.25}
+      M ${width * 0.03} ${height * 0.85}
+      Q ${width * 0.02} ${height * 0.55}, ${width * 0.12} ${height * 0.25}
       Q ${width * 0.18} ${height * 0.05}, ${width * 0.32} ${height * 0.2}
       Q ${width * 0.45} ${height * 0.08}, ${width * 0.58} ${height * 0.28}
       Q ${width * 0.72} ${height * 0.1}, ${width * 0.85} ${height * 0.32}
-      Q ${width * 0.96} ${height * 0.25}, ${width * 0.99} ${height * 0.5}
-      L ${width * 0.99} ${height * 0.85}
-      L ${width * 0.01} ${height * 0.85} Z
+      Q ${width * 0.96} ${height * 0.45}, ${width * 0.97} ${height * 0.85}
+      Z
     `,
     
     // Type 3: Wispy trailing edge
@@ -58,7 +57,7 @@ const CloudBackground = () => {
       Z
     `,
     
-    // Type 5: Flat-bottomed cumulus style
+    // Type 5: Soft cumulus with tapered edges
     (width: number, height: number) => `
       M ${width * 0.08} ${height * 0.82}
       Q ${width * 0.05} ${height * 0.5}, ${width * 0.15} ${height * 0.32}
@@ -66,7 +65,7 @@ const CloudBackground = () => {
       Q ${width * 0.45} ${height * 0.15}, ${width * 0.58} ${height * 0.3}
       Q ${width * 0.7} ${height * 0.2}, ${width * 0.82} ${height * 0.35}
       Q ${width * 0.92} ${height * 0.45}, ${width * 0.92} ${height * 0.82}
-      L ${width * 0.08} ${height * 0.82} Z
+      Z
     `,
     
     // Type 6: Asymmetric
@@ -128,14 +127,14 @@ const CloudBackground = () => {
       Z
     `,
     
-    // Type 11: Stretched thin
+    // Type 11: Stretched with soft ends
     (width: number, height: number) => `
-      M ${width * 0.01} ${height * 0.85}
-      Q ${width * 0.01} ${height * 0.45}, ${width * 0.2} ${height * 0.4}
+      M ${width * 0.03} ${height * 0.85}
+      Q ${width * 0.02} ${height * 0.55}, ${width * 0.2} ${height * 0.4}
       Q ${width * 0.4} ${height * 0.35}, ${width * 0.6} ${height * 0.38}
-      Q ${width * 0.8} ${height * 0.36}, ${width * 0.99} ${height * 0.42}
-      L ${width * 0.99} ${height * 0.85}
-      L ${width * 0.01} ${height * 0.85} Z
+      Q ${width * 0.8} ${height * 0.36}, ${width * 0.97} ${height * 0.52}
+      Q ${width * 0.98} ${height * 0.68}, ${width * 0.97} ${height * 0.85}
+      Z
     `,
     
     // Type 12: Undulating
@@ -207,10 +206,45 @@ const CloudBackground = () => {
             animationDelay: `${cloud.delay}s`
           }}
         >
+          <defs>
+            <pattern 
+              id={`cloudGrain-${cloud.id}`} 
+              patternUnits="userSpaceOnUse" 
+              width="200" 
+              height="200"
+            >
+              <image 
+                href="/noise.svg" 
+                width="200" 
+                height="200" 
+                opacity="0.4"
+              />
+            </pattern>
+            <mask id={`cloudMask-${cloud.id}`}>
+              <path
+                d={cloud.shape(cloud.width, cloud.height)}
+                fill="white"
+              />
+            </mask>
+          </defs>
+          
+          {/* Base cloud color */}
           <path
             d={cloud.shape(cloud.width, cloud.height)}
             fill="currentColor"
             className={cloud.color}
+          />
+          
+          {/* Grainy overlay */}
+          <rect 
+            width={cloud.width} 
+            height={cloud.height}
+            fill={`url(#cloudGrain-${cloud.id})`}
+            mask={`url(#cloudMask-${cloud.id})`}
+            style={{
+              mixBlendMode: 'multiply',
+              filter: 'contrast(150%) brightness(120%)'
+            }}
           />
         </svg>
       ))}

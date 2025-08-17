@@ -72,16 +72,16 @@
 }
 
 .cloud-layer-back {
-  opacity: 0.04;
+  opacity: 0.06;
   transform: scale(0.8);
 }
 
 .cloud-layer-mid {
-  opacity: 0.06;
+  opacity: 0.08;
   transform: scale(1);
 }
 
 .cloud-layer-front {
-  opacity: 0.08;
+  opacity: 0.1;
   transform: scale(1.2);
 }
