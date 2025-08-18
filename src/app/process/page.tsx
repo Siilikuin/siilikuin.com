@@ -55,7 +55,7 @@ export default function Process() {
               2 weeks to map out what we&apos;re actually building
             </p>
             <p className="text-fg-gray mb-6">
-              If we decide to work together, I&apos;ll spend two weeks writing up exactly what I understand needs to be built, how I&apos;d build it, and what it&apos;ll cost. This is about 8-10 hours of focused work, spread across evenings and weekends - I find I do my best thinking outside the 9-to-5 chaos.
+              If we decide to work together, I&apos;ll spend two weeks writing up exactly what I understand needs to be built, how I&apos;d build it, and what it&apos;ll cost. This is about 8-10 hours of focused work, spread across evenings and weekends. I have a day job, so I only take on what I can deliver in this timeframe.
             </p>
             <p className="text-fg-gray mb-6">
               You get a technical roadmap that captures all the important decisions - architecture, tools, timeline. Usually 5-10 pages of clear direction that you can hand to any competent developer.
