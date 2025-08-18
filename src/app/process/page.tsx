@@ -78,7 +78,7 @@ export default function Process() {
               </li>
               <li className="flex items-start">
                 <span className="text-fg-seafoam mr-2">•</span>
-                <span><strong>Bonus:</strong> I&apos;ll answer reasonable questions from whoever implements it for the first month - just keep me in the loop. (But I&apos;m not on call - this is friendly guidance, not support)</span>
+                <span><strong>Bonus:</strong> For 30 days after delivery, I&apos;ll answer implementation questions via email (up to 2 hours total). This helps your team get unstuck without keeping me on retainer.</span>
               </li>
             </ul>
           </section>
