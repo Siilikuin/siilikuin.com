@@ -17,10 +17,10 @@ export default function CaseStudiesPage() {
       
       <main className="px-8 md:px-12 py-16 max-w-7xl mx-auto relative z-10 mt-20">
         <section className="mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-fg-violet mb-6">
             Case Studies
           </h1>
-          <p className="text-xl text-fg-gray max-w-3xl">
+          <p className="text-lg md:text-xl text-fg-gray max-w-3xl">
             Nothing here yet! But there will be.
           </p>
         </section>

@@ -13,15 +13,15 @@ export default function Home() {
       <main className="relative z-10">
         <section className="min-h-screen flex items-center justify-center px-8 md:px-12">
           <div className="text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
+            <h2 className="text-4xl md:text-6xl font-bold text-fg-violet mb-6">
               I build useful, no-nonsense software.
             </h2>
-            <p className="text-xl text-fg-gray mb-8 max-w-3xl mx-auto">
+            <p className="text-lg md:text-xl text-fg-gray mb-8 max-w-3xl mx-auto">
               Hi, I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>. Siilikuin (pronounced SEELIE-Quinn) is where I build software.
               <br /><br />
               I build tools and apps that solve real problems - focusing on reliable, low-maintenance software, be it 100% local, 100% cloud-native, or anything in between.
             </p>
-            <p className="text-2xl text-fg-seafoam font-medium mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-fg-seafoam font-medium mb-8 max-w-3xl mx-auto">
               Preferred tools: Go, Python, TypeScript, or <Link href="https://mcfunley.com/choose-boring-technology" className="underline hover:text-fg-violet transition-colors">whatever you&apos;re already using</Link>.
             </p>
             <div className="flex gap-4 justify-center">
@@ -32,7 +32,7 @@ export default function Home() {
                 What I&apos;ve built
               </Link>
             </div>
-            <p className="text-lg text-fg-gray mt-12">
+            <p className="text-base md:text-lg text-fg-gray mt-12">
               <span className="text-fg-violet font-medium">Latest shipped:</span>{" "}
               <Link href="https://taskusanakirja.com/" className="underline hover:text-fg-violet transition-colors">
                 Taskusanakirja: The Finnish-English dictionary you didn&apos;t know you needed

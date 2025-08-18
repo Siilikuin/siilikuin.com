@@ -85,3 +85,11 @@
   opacity: 0.1;
   transform: scale(1.2);
 }
+
+/* Disable animations on mobile for performance */
+@media (max-width: 768px) {
+  .cloud {
+    animation: none !important;
+    display: none;
+  }
+}

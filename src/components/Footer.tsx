@@ -14,15 +14,15 @@ export default function Footer() {
               height={32}
               className="rounded"
             />
-            <h3 className="text-2xl font-bold text-bg-gray">Siilikuin</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-bg-gray">Siilikuin</h3>
           </div>
-          <p className="text-bg-gray">
+          <p className="text-sm md:text-base text-bg-gray">
             Cloud, compassion, code
           </p>
         </div>
         <div>
-          <h4 className="font-semibold mb-3 text-bg-gray">Links</h4>
-          <ul className="space-y-2 text-bg-gray">
+          <h4 className="text-sm md:text-base font-semibold mb-3 text-bg-gray">Links</h4>
+          <ul className="space-y-2 text-sm md:text-base text-bg-gray">
             <li><Link href="/about" className="hover:text-bg-seafoam transition-colors">About</Link></li>
             <li><Link href="/software" className="hover:text-bg-seafoam transition-colors">Software</Link></li>
             <li><Link href="/case-studies" className="hover:text-bg-seafoam transition-colors">Case Studies</Link></li>
@@ -30,18 +30,18 @@ export default function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="font-semibold mb-3 text-bg-gray">Contact</h4>
-          <ul className="space-y-2 text-bg-gray">
+          <h4 className="text-sm md:text-base font-semibold mb-3 text-bg-gray">Contact</h4>
+          <ul className="space-y-2 text-sm md:text-base text-bg-gray">
             <li><Link href="https://calendly.com/andrew-siilikuin" className="hover:text-bg-seafoam transition-colors">Schedule a call</Link></li>
             <li>andrew@siilikuin.com</li>
           </ul>
         </div>
       </div>
       <div className="max-w-7xl mx-auto mt-8 pt-8 border-t border-bg-gray/20">
-        <p className="text-center text-bg-gray">
+        <p className="text-center text-sm md:text-base text-bg-gray">
           © 2022-2025 Siilikuin. All rights reserved.
         </p>
-        <p className="text-center text-bg-gray text-sm mt-2">
+        <p className="text-center text-bg-gray text-xs md:text-sm mt-2">
           Business: Siilikuin, Finnish Y-tunnus / business ID: 3372332-8<br />
           Location: Finland
         </p>

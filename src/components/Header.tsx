@@ -72,8 +72,8 @@ export default function Header() {
             className="rounded-lg"
           />
           <div>
-            <h1 className="text-2xl font-bold text-fg-violet">Siilikuin</h1>
-            <p className="text-sm text-fg-seafoam">Cloud, compassion, code</p>
+            <h1 className="text-xl md:text-2xl font-bold text-fg-violet">Siilikuin</h1>
+            <p className="text-xs md:text-sm text-fg-seafoam">Cloud, compassion, code</p>
           </div>
         </Link>
 

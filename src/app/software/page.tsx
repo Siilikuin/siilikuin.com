@@ -18,10 +18,10 @@ export default function SoftwarePage() {
 
       <main className="px-8 md:px-12 py-16 max-w-7xl mx-auto relative z-10 mt-20">
         <section className="mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold text-fg-violet mb-6">
             Software
           </h1>
-          <p className="text-xl text-fg-gray max-w-3xl">
+          <p className="text-lg md:text-xl text-fg-gray max-w-3xl">
             Commercial products built and maintained by Siilikuin.
           </p>
         </section>
@@ -32,10 +32,10 @@ export default function SoftwarePage() {
             <div className="p-10">
               <div className="flex items-start justify-between mb-6">
                 <div>
-                  <h2 className="text-3xl font-bold text-fg-violet mb-2">
+                  <h2 className="text-2xl md:text-3xl font-bold text-fg-violet mb-2">
                     Taskusanakirja
                   </h2>
-                  <p className="text-fg-seafoam font-medium">Finnish-English Dictionary for the Command Line</p>
+                  <p className="text-sm md:text-base text-fg-seafoam font-medium">Finnish-English Dictionary for the Command Line</p>
                 </div>
                 <Link
                   href="https://taskusanakirja.com"
@@ -47,14 +47,14 @@ export default function SoftwarePage() {
                 </Link>
               </div>
 
-              <p className="text-fg-gray mb-6">
+              <p className="text-sm md:text-base text-fg-gray mb-6">
                 A modern, fast Finnish-English dictionary that searches keystroke-by-keystroke. Built because existing options were either slow, cluttered with ads, or required a constant internet connection. Taskusanakirja works offline, loads instantly, and runs entirely in the user&apos;s terminal for a distraction-free, cross-platform experience.
               </p>
 
               <div className="grid md:grid-cols-3 gap-6 mb-6">
                 <div>
-                  <h3 className="font-semibold text-fg-violet mb-2">Features</h3>
-                  <ul className="text-fg-gray space-y-1">
+                  <h3 className="text-sm md:text-base font-semibold text-fg-violet mb-2">Features</h3>
+                  <ul className="text-xs md:text-sm text-fg-gray space-y-1">
                     <li className="flex items-start">
                       <span className="text-fg-seafoam mr-2">•</span>
                       <span>Interactive Terminal UI</span>
@@ -75,8 +75,8 @@ export default function SoftwarePage() {
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-fg-violet mb-2">Tech Stack</h3>
-                  <ul className="text-fg-gray space-y-1">
+                  <h3 className="text-sm md:text-base font-semibold text-fg-violet mb-2">Tech Stack</h3>
+                  <ul className="text-xs md:text-sm text-fg-gray space-y-1">
                     <li className="flex items-start">
                       <span className="text-fg-seafoam mr-2">•</span>
                       <span>Go</span>
@@ -101,8 +101,8 @@ export default function SoftwarePage() {
                 </div>
 
                 <div>
-                  <h3 className="font-semibold text-fg-violet mb-2">Status</h3>
-                  <p className="text-fg-gray">
+                  <h3 className="text-sm md:text-base font-semibold text-fg-violet mb-2">Status</h3>
+                  <p className="text-sm md:text-base text-fg-gray">
                     <span className="inline-block px-3 py-1 bg-bg-seafoam text-fg-seafoam rounded-full text-sm font-medium">
                       Active Development
                     </span>
