@@ -16,8 +16,10 @@ export default function AboutPage() {
           <h1 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
             About
           </h1>
-          <p className="text-xl text-fg-gray max-w-3xl">
-            I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>, a software engineer who builds practical solutions to real problems. 
+          <p className="text-xl text-fg-gray max-w-3xl mb-4">
+            Hi, I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>. Siilikuin (pronounced SEELIE-Quinn) is where I build software.
+          </p>
+          <p className="text-lg text-fg-gray max-w-3xl">
             Siilikuin is my one-man software development company, and it comes in two flavors: Siilikuin LLC for US clients, and Siilikuin toiminimi for Finnish clients. 
             (I myself am a dual US-EU citizen, currently living in Finland.)
           </p>
@@ -29,8 +31,7 @@ export default function AboutPage() {
             <div className="md:w-1/2 mb-8 md:mb-0">
               <h2 className="text-4xl font-bold text-fg-violet mb-6">Background</h2>
               <p className="text-fg-gray mb-4">
-                I&apos;ve worked across fintech, healthcare, and transportation - industries where software has to work reliably, 
-                every time. This experience shaped my approach: build things that are maintainable, understandable, and actually solve the problem at hand.
+                I&apos;ve worked across <Link href="https://www.nomentia.com/" className="underline hover:text-fg-violet transition-colors">fintech</Link>, <Link href="https://www.epic.com/" className="underline hover:text-fg-violet transition-colors">healthcare</Link>, and <Link href="https://www.teleste.com/" className="underline hover:text-fg-violet transition-colors">transportation</Link> - highly regulated industries where the cost of a single software bug can be catastrophic. This experience shaped my approach: build things that are maintainable, understandable, and actually solve the problem at hand.
               </p>
               <p className="text-fg-gray mb-4">
                 I work with Go, Python, and TypeScript primarily, but I&apos;m tool-agnostic. The right tool is the one that 
@@ -68,7 +69,7 @@ export default function AboutPage() {
             <div className="bg-bg-white p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-fg-violet mb-3">Software That Works</h3>
               <p className="text-fg-gray">
-                I've built systems for fintech, healthcare, and transportation companies. Complex problems, 
+                I've built, deployed, and maintained systems for <Link href="https://www.nomentia.com/" className="underline hover:text-fg-violet transition-colors">fintech</Link>, <Link href="https://www.epic.com/" className="underline hover:text-fg-violet transition-colors">healthcare</Link>, and <Link href="https://www.teleste.com/" className="underline hover:text-fg-violet transition-colors">transportation</Link> companies. Complex problems, 
                 practical solutions. No PowerPoints, just code that ships.
               </p>
             </div>

@@ -41,6 +41,10 @@ export default function Footer() {
         <p className="text-center text-bg-gray">
           © 2022-2025 Siilikuin. All rights reserved.
         </p>
+        <p className="text-center text-bg-gray text-sm mt-2">
+          Business: Siilikuin, Finnish Y-tunnus / business ID: 3372332-8<br />
+          Location: Finland
+        </p>
       </div>
     </footer>
   );

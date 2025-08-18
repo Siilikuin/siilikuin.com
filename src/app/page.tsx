@@ -17,7 +17,7 @@ export default function Home() {
               I build useful, no-nonsense software.
             </h2>
             <p className="text-xl text-fg-gray mb-8 max-w-3xl mx-auto">
-              Siilikuin (pronounced SEELIE-Quinn).
+              Hi, I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>. Siilikuin (pronounced SEELIE-Quinn) is where I build software.
               <br /><br />
               I build tools and apps that solve real problems - focusing on reliable, low-maintenance software, be it 100% local, 100% cloud-native, or anything in between.
             </p>
