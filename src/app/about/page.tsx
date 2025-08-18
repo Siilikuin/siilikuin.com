@@ -17,7 +17,9 @@ export default function AboutPage() {
             About
           </h1>
           <p className="text-xl text-fg-gray max-w-3xl">
-            I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>, a software engineer who builds practical solutions to real problems.
+            I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>, a software engineer who builds practical solutions to real problems. 
+            Siilikuin is my one-man software development company, and it comes in two flavors: Siilikuin LLC for US clients, and Siilikuin toiminimi for Finnish clients. 
+            (I myself am a dual US-EU citizen, currently living in Finland.)
           </p>
         </section>
 
@@ -40,14 +42,20 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="md:w-1/2">
-              <div className="bg-bg-violet rounded-2xl p-12 flex items-center justify-center">
-                <Image
-                  src="/siili.png"
-                  alt="Siilikuin mascot"
-                  width={200}
-                  height={200}
-                  className=""
-                />
+              <div className="bg-bg-violet rounded-2xl p-12">
+                <div className="flex flex-col items-center">
+                  <Image
+                    src="/siili.png"
+                    alt="Siilikuin mascot"
+                    width={200}
+                    height={200}
+                    className="mb-4"
+                  />
+                  <p className="text-sm text-fg-gray text-center italic">
+                    Siilikuin - like &apos;<Link href="https://en.wikipedia.org/wiki/Seelie" className="underline hover:text-fg-violet transition-colors">The Seelie Court</Link>&apos; plus my last name Quinn, 
+                    it means &apos;<Link href="https://longnow.org/talks/02007-tetlock/" className="underline hover:text-fg-violet transition-colors">hedgehog</Link>-like&apos; in Finnish.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
