@@ -60,6 +60,9 @@ export default function Process() {
             <p className="text-fg-gray mb-6">
               You get a technical roadmap that captures all the important decisions - architecture, tools, timeline. Usually 5-10 pages of clear direction that you can hand to any competent developer.
             </p>
+            <p className="text-fg-gray mb-6">
+              I&apos;ll ask your permission to publish a sanitized version as a case study on this site. This is how I can offer such a low price - you&apos;re helping me build my portfolio while getting a professional technical plan.
+            </p>
             <p className="text-fg-gray mb-6 font-medium">
               Most clients take the plan and run with it. That&apos;s the point.
             </p>
@@ -70,7 +73,7 @@ export default function Process() {
               </li>
               <li className="flex items-start">
                 <span className="text-fg-seafoam mr-2">•</span>
-                <span><strong>Cost:</strong> €250 (while I build my case study portfolio)</span>
+                <span><strong>Cost:</strong> €250 (discounted price in exchange for case study rights)</span>
               </li>
               <li className="flex items-start">
                 <span className="text-fg-seafoam mr-2">•</span>
