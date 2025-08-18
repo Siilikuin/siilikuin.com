@@ -14,7 +14,7 @@ export default function Home() {
         <section className="min-h-screen flex items-center justify-center px-8 md:px-12">
           <div className="text-center">
             <h2 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
-              I build useful, no-nonsense software.
+              I plan and build useful, no-nonsense software.
             </h2>
             <p className="text-xl text-fg-gray mb-8 max-w-3xl mx-auto">
               Hi, I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>. Siilikuin is where I build software. 
