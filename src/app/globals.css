@@ -77,7 +77,7 @@ body {
 /* Static purple gradient background on mobile */
 @media (max-width: 768px) {
   body {
-    background: linear-gradient(135deg, #F1E8E9 0%, #E8E5F0 50%, #F1E8E9 100%);
+    background: linear-gradient(135deg, var(--bg-base) 0%, var(--bg-violet) 50%, var(--bg-base) 100%);
     background-attachment: fixed;
   }
 }
