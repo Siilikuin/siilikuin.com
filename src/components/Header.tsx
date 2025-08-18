@@ -28,10 +28,6 @@ const navigation: NavItem[] = [
     href: "/about"
   },
   {
-    label: "Process",
-    href: "/process"
-  },
-  {
     label: "Contact",
     href: "https://calendly.com/andrew-siilikuin"
   }

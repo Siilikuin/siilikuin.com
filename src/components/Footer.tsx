@@ -26,7 +26,6 @@ export default function Footer() {
             <li><Link href="/about" className="hover:text-bg-seafoam transition-colors">About</Link></li>
             <li><Link href="/software" className="hover:text-bg-seafoam transition-colors">Software</Link></li>
             <li><Link href="/case-studies" className="hover:text-bg-seafoam transition-colors">Case Studies</Link></li>
-            <li><Link href="/process" className="hover:text-bg-seafoam transition-colors">Process</Link></li>
             <li><Link href="/blog" className="hover:text-bg-seafoam transition-colors">Blog</Link></li>
           </ul>
         </div>

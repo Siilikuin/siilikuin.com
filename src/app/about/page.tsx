@@ -53,36 +53,36 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* What I Do Section */}
+        {/* What I Build Section */}
         <section className="mb-20">
-          <h2 className="text-4xl font-bold text-fg-violet mb-12">What I Do</h2>
+          <h2 className="text-4xl font-bold text-fg-violet mb-12">What I Build</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-bg-white p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-fg-violet mb-3">Client Work</h3>
+              <h3 className="text-2xl font-bold text-fg-violet mb-3">Software That Works</h3>
               <p className="text-fg-gray">
-                I work with companies on specific technical challenges. Usually this means building new systems, 
-                fixing existing ones, or helping teams navigate technical decisions. No PowerPoints, just code.
+                I've built systems for fintech, healthcare, and transportation companies. Complex problems, 
+                practical solutions. No PowerPoints, just code that ships.
               </p>
             </div>
             <div className="bg-bg-white p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-fg-violet mb-3">Own Products</h3>
+              <h3 className="text-2xl font-bold text-fg-violet mb-3">Tools That Matter</h3>
               <p className="text-fg-gray">
-                Sometimes I build things because they should exist. Like Taskusanakirja - a Finnish-English dictionary 
+                Sometimes I build things because they should exist. Like <Link href="https://taskusanakirja.com/" className="underline hover:text-fg-violet transition-colors">Taskusanakirja</Link> - a Finnish-English dictionary 
                 that actually works the way language learners need it to.
               </p>
             </div>
           </div>
         </section>
 
-        {/* How I Work Section */}
+        {/* My Approach Section */}
         <section className="bg-bg-seafoam rounded-2xl p-12 mb-20">
-          <h2 className="text-4xl font-bold text-fg-violet mb-6">How I Work</h2>
+          <h2 className="text-4xl font-bold text-fg-violet mb-6">My Approach</h2>
           <div className="space-y-4">
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 bg-fg-seafoam rounded-full flex-shrink-0 mt-1"></div>
               <p className="text-fg-gray">
-                <span className="font-medium text-fg-violet">Clear communication:</span> Technical work doesn&apos;t have to be opaque. 
-                I explain what I&apos;m doing and why.
+                <span className="font-medium text-fg-violet">Clear thinking:</span> Technical work doesn&apos;t have to be opaque. 
+                Good code explains itself.
               </p>
             </div>
             <div className="flex items-start gap-3">

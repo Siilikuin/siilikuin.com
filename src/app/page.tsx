@@ -14,15 +14,13 @@ export default function Home() {
         <section className="min-h-screen flex items-center justify-center px-8 md:px-12">
           <div className="text-center">
             <h2 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
-              I plan and build useful, no-nonsense software.
+              I build useful, no-nonsense software.
             </h2>
             <p className="text-xl text-fg-gray mb-8 max-w-3xl mx-auto">
               Hi, I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>. Siilikuin is where I build software. 
               (Like &apos;<Link href="https://en.wikipedia.org/wiki/Seelie" className="underline hover:text-fg-violet transition-colors">The Seelie Court</Link>&apos; plus my last name, it means &apos;<Link href="https://longnow.org/talks/02007-tetlock/" className="underline hover:text-fg-violet transition-colors">hedgehog</Link>-like&apos; in Finnish.)
               <br /><br />
-              Sometimes it&apos;s my own products - tools and apps I think should exist. Other times it&apos;s with companies on interesting problems.
-              <br /><br />
-              I focus on reliable, low-maintenance software, be it 100% local, 100% cloud-native, or anything in between. For external clients, I deliver actionable technical roadmaps that lead to working software.
+              I build tools and apps that solve real problems - focusing on reliable, low-maintenance software, be it 100% local, 100% cloud-native, or anything in between.
             </p>
             <p className="text-2xl text-fg-seafoam font-medium mb-8 max-w-3xl mx-auto">
               Preferred tools: Go, Python, TypeScript, or <Link href="https://mcfunley.com/choose-boring-technology" className="underline hover:text-fg-violet transition-colors">whatever you&apos;re already using</Link>.
@@ -31,8 +29,8 @@ export default function Home() {
               <Link href="https://calendly.com/andrew-siilikuin" className="bg-bg-seafoam text-fg-seafoam px-6 py-3 rounded-lg hover:opacity-90 transition-opacity inline-block">
                 Let&apos;s talk
               </Link>
-              <Link href="/process" className="border-2 border-fg-violet-soft text-fg-violet-soft px-6 py-3 rounded-lg hover:bg-fg-violet-soft hover:text-fg-white transition-all inline-block">
-                My client process
+              <Link href="/software" className="border-2 border-fg-violet-soft text-fg-violet-soft px-6 py-3 rounded-lg hover:bg-fg-violet-soft hover:text-fg-white transition-all inline-block">
+                What I&apos;ve built
               </Link>
             </div>
             <p className="text-lg text-fg-gray mt-12">
