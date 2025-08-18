@@ -1,9 +1,14 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import CloudBackground from "../CloudBackground";
 import Header from "../../components/Header";
 import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
+
+export const metadata: Metadata = {
+  title: "Software",
+};
 
 export default function SoftwarePage() {
   return (
