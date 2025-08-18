@@ -22,7 +22,7 @@ export default function Home() {
               <br /><br />
               Sometimes it&apos;s my own products - tools and apps I think should exist. Other times it&apos;s with companies on interesting problems.
               <br /><br />
-              I focus on reliable, low-maintenance software, be it 100% local, 100% cloud-native, or anything in between. I deliver actionable technical roadmaps that lead to working software.
+              I focus on reliable, low-maintenance software, be it 100% local, 100% cloud-native, or anything in between. For external clients, I deliver actionable technical roadmaps that lead to working software.
             </p>
             <p className="text-2xl text-fg-seafoam font-medium mb-8 max-w-3xl mx-auto">
               Preferred tools: Go, Python, TypeScript, or <Link href="https://mcfunley.com/choose-boring-technology" className="underline hover:text-fg-violet transition-colors">whatever you&apos;re already using</Link>.
