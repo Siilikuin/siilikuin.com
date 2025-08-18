@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
@@ -11,14 +12,14 @@ export default function CTASection() {
         className="mx-auto mb-6"
       />
       <h2 className="text-4xl font-bold text-fg-violet mb-4">
-        Ready to Transform Your Business?
+        Got a project in mind?
       </h2>
       <p className="text-xl text-fg-gray mb-8 max-w-2xl mx-auto">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.
+        Let&apos;s discuss how I can help you build something that actually works.
       </p>
-      <button className="bg-bg-seafoam text-fg-seafoam px-8 py-4 rounded-lg text-lg hover:opacity-90 transition-opacity">
-        Contact Us Today
-      </button>
+      <Link href="https://calendly.com/andrew-siilikuin" className="bg-bg-seafoam text-fg-seafoam px-8 py-4 rounded-lg text-lg hover:opacity-90 transition-opacity inline-block">
+        Let&apos;s talk
+      </Link>
     </section>
   );
 }
