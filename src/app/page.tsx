@@ -25,7 +25,7 @@ export default function Home() {
               I focus on reliable, low-maintenance software, be it 100% local, 100% cloud-native, or anything in between. I ship actual working software, not slide decks.
             </p>
             <p className="text-2xl text-fg-seafoam font-medium mb-8 max-w-3xl mx-auto">
-              Preferred tools: Go, Python, TypeScript, or whatever you&apos;re already using.
+              Preferred tools: <Link href="https://go.dev/" className="underline hover:text-fg-violet transition-colors">Go</Link>, <Link href="https://www.python.org/" className="underline hover:text-fg-violet transition-colors">Python</Link>, <Link href="https://www.typescriptlang.org/" className="underline hover:text-fg-violet transition-colors">TypeScript</Link>, or <Link href="https://mcfunley.com/choose-boring-technology" className="underline hover:text-fg-violet transition-colors">whatever you&apos;re already using</Link>.
             </p>
             <div className="flex gap-4 justify-center">
               <Link href="https://calendly.com/andrew-siilikuin" className="bg-bg-seafoam text-fg-seafoam px-6 py-3 rounded-lg hover:opacity-90 transition-opacity inline-block">
