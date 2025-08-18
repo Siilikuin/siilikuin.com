@@ -69,7 +69,7 @@ export default function AboutPage() {
             <div className="bg-bg-white p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-fg-violet mb-3">Software That Works</h3>
               <p className="text-fg-gray">
-                I've built, deployed, and maintained systems for <Link href="https://www.nomentia.com/" className="underline hover:text-fg-violet transition-colors">fintech</Link>, <Link href="https://www.epic.com/" className="underline hover:text-fg-violet transition-colors">healthcare</Link>, and <Link href="https://www.teleste.com/" className="underline hover:text-fg-violet transition-colors">transportation</Link> companies. Complex problems, 
+                I&apos;ve built, deployed, and maintained systems for <Link href="https://www.nomentia.com/" className="underline hover:text-fg-violet transition-colors">fintech</Link>, <Link href="https://www.epic.com/" className="underline hover:text-fg-violet transition-colors">healthcare</Link>, and <Link href="https://www.teleste.com/" className="underline hover:text-fg-violet transition-colors">transportation</Link> companies. Complex problems, 
                 practical solutions. No PowerPoints, just code that ships.
               </p>
             </div>

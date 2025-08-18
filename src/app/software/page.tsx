@@ -43,7 +43,7 @@ export default function SoftwarePage() {
               </div>
 
               <p className="text-fg-gray mb-6">
-                A modern, fast Finnish-English dictionary that searches keystroke-by-keystroke. Built because existing options were either slow, cluttered with ads, or required a constant internet connection. Taskusanakirja works offline, loads instantly, and runs entirely in the user's terminal for a distraction-free, cross-platform experience.
+                A modern, fast Finnish-English dictionary that searches keystroke-by-keystroke. Built because existing options were either slow, cluttered with ads, or required a constant internet connection. Taskusanakirja works offline, loads instantly, and runs entirely in the user&apos;s terminal for a distraction-free, cross-platform experience.
               </p>
 
               <div className="grid md:grid-cols-3 gap-6 mb-6">
