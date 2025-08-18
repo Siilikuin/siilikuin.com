@@ -73,3 +73,11 @@ body {
   color: var(--fg-gray);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Static purple gradient background on mobile */
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(135deg, #F1E8E9 0%, #E8E5F0 50%, #F1E8E9 100%);
+    background-attachment: fixed;
+  }
+}

@@ -86,15 +86,9 @@
   transform: scale(1.2);
 }
 
-/* Reduce cloud complexity on mobile for performance */
+/* Disable clouds entirely on mobile for performance */
 @media (max-width: 768px) {
-  .cloud {
-    /* Keep animations but make them slower for performance */
-    animation-duration: 200s !important;
-  }
-  
-  /* Hide most clouds on mobile, only show first 5 */
-  .cloud:nth-child(n+6) {
+  .cloud-container {
     display: none;
   }
 }
