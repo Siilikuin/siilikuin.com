@@ -16,7 +16,7 @@ export default function CaseStudiesPage() {
             Case Studies
           </h1>
           <p className="text-xl text-fg-gray max-w-3xl">
-            Discover how we've helped organizations transform their digital infrastructure and achieve remarkable results.
+            Discover how we&apos;ve helped organizations transform their digital infrastructure and achieve remarkable results.
           </p>
         </section>
 
