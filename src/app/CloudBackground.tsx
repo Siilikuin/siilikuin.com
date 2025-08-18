@@ -4,7 +4,17 @@ import React, { useState, useEffect } from 'react';
 import './clouds.css';
 
 const CloudBackground = () => {
-  const [clouds, setClouds] = useState<any[]>([]);
+  const [clouds, setClouds] = useState<Array<{ 
+    id: number; 
+    width: number; 
+    height: number; 
+    shape: (width: number, height: number) => string; 
+    color: string; 
+    layer: string; 
+    animationClass: string; 
+    top: number; 
+    delay: number; 
+  }>>([]);
 
   // Define various cloud shapes
   const cloudShapes = [
