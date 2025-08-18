@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import CloudBackground from "./CloudBackground";
 import CityBackground from "./CityBackground";
 import Header from "../components/Header";
@@ -12,28 +13,30 @@ export default function Home() {
       {/* <CityBackground /> */}
       <Header />
 
-      <main className="px-8 md:px-12 py-16 max-w-7xl mx-auto relative z-10 mt-20">
-        <section className="mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
-            Software Consultancy Excellence
-          </h2>
-          <p className="text-2xl text-fg-seafoam font-medium mb-4">
-            Cloud, compassion, code.
-          </p>
-          <p className="text-xl text-fg-gray mb-8 max-w-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum.
-          </p>
-          <div className="flex gap-4">
-            <button className="bg-bg-seafoam text-fg-seafoam px-6 py-3 rounded-lg hover:opacity-90 transition-opacity">
-              Get Started
-            </button>
-            <button className="border-2 border-fg-violet-soft text-fg-violet-soft px-6 py-3 rounded-lg hover:bg-fg-violet-soft hover:text-fg-white transition-all">
-              Learn More
-            </button>
+      <main className="relative z-10">
+        <section className="min-h-screen flex items-center justify-center px-8 md:px-12">
+          <div className="text-center">
+            <h2 className="text-5xl md:text-6xl font-bold text-fg-violet mb-6">
+              Reliable Software for Complex Environments
+            </h2>
+            <p className="text-xl text-fg-gray mb-4 max-w-3xl mx-auto">
+              We translate stringent requirements into targeted, maintainable software. With a deep understanding not just of software development but of IT infrastructure as a whole, drawn from experience in highly regulated fintech, healthcare, and rail, we partner with you to deliver and maintain solutions that are secure, scalable, and ready for any environment.
+            </p>
+            <p className="text-2xl text-fg-seafoam font-medium mb-8 max-w-3xl mx-auto">
+              Preferred tools: Go, Python, TypeScript, or whatever you&apos;re already using.
+            </p>
+            <div className="flex gap-4 justify-center">
+              <Link href="/questionnaire" className="bg-bg-seafoam text-fg-seafoam px-6 py-3 rounded-lg hover:opacity-90 transition-opacity inline-block">
+                Let&apos;s talk
+              </Link>
+              <button className="border-2 border-fg-violet-soft text-fg-violet-soft px-6 py-3 rounded-lg hover:bg-fg-violet-soft hover:text-fg-white transition-all">
+                Learn More
+              </button>
+            </div>
           </div>
         </section>
 
-        <section className="grid md:grid-cols-3 gap-8 mb-20">
+        <section className="grid md:grid-cols-3 gap-8 mb-20 px-8 md:px-12 max-w-7xl mx-auto">
           <div className="bg-bg-white p-8 rounded-xl shadow-sm">
             <Image 
               src="/siili.png" 
@@ -69,7 +72,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="bg-bg-seafoam p-12 rounded-2xl mb-20">
+        <section className="bg-bg-seafoam p-12 rounded-2xl mb-20 mx-8 md:mx-12 max-w-7xl md:mx-auto">
           <h2 className="text-4xl font-bold text-fg-violet mb-6">
             Why Choose Siilikuin?
           </h2>
@@ -103,7 +106,9 @@ export default function Home() {
           </div>
         </section>
 
-        <CTASection />
+        <div className="px-8 md:px-12 max-w-7xl mx-auto">
+          <CTASection />
+        </div>
       </main>
 
       <Footer />
