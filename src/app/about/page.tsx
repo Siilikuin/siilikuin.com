@@ -25,7 +25,7 @@ export default function AboutPage() {
             Hi, I&apos;m <Link href="https://andrew-quinn.me/" className="underline hover:text-fg-violet transition-colors">Andrew Quinn</Link>. Siilikuin (pronounced SEELIE-Quinn) is where I build software.
           </p>
           <p className="text-base md:text-lg text-fg-gray max-w-3xl">
-            Siilikuin is my one-man software development company, and it comes in two flavors: Siilikuin LLC for US clients, and Siilikuin toiminimi for Finnish clients. 
+            Siilikuin is my one-man software development company.
             (I myself am a dual US-EU citizen, currently living in Finland.)
           </p>
         </section>
@@ -39,11 +39,11 @@ export default function AboutPage() {
                 I&apos;ve worked across <Link href="https://www.nomentia.com/" className="underline hover:text-fg-violet transition-colors">fintech</Link>, <Link href="https://www.epic.com/" className="underline hover:text-fg-violet transition-colors">healthcare</Link>, and <Link href="https://www.teleste.com/" className="underline hover:text-fg-violet transition-colors">transportation</Link> - highly regulated industries where the cost of a single software bug can be catastrophic. This experience shaped my approach: build things that are maintainable, understandable, and actually solve the problem at hand.
               </p>
               <p className="text-sm md:text-base text-fg-gray mb-4">
-                I work with Go, Python, and TypeScript primarily, but I&apos;m tool-agnostic. The right tool is the one that 
+                I work with Go, Python, and TypeScript primarily, but I&apos;m tool-agnostic. The right tool is the one that
                 gets the job done and doesn&apos;t create headaches six months later.
               </p>
               <p className="text-sm md:text-base text-fg-gray">
-                Whether it&apos;s a completely local application, a cloud-native service, or something in between, 
+                Whether it&apos;s a completely local application, a cloud-native service, or something in between,
                 I focus on shipping working software that does what it&apos;s supposed to do.
               </p>
             </div>
@@ -58,7 +58,7 @@ export default function AboutPage() {
                     className="mb-4"
                   />
                   <p className="text-sm text-fg-gray text-center italic">
-                    Siilikuin - like &apos;<Link href="https://en.wikipedia.org/wiki/Seelie" className="underline hover:text-fg-violet transition-colors">The Seelie Court</Link>&apos; plus my last name Quinn, 
+                    Siilikuin - like &apos;<Link href="https://en.wikipedia.org/wiki/Seelie" className="underline hover:text-fg-violet transition-colors">The Seelie Court</Link>&apos; plus my last name Quinn,
                     it means &apos;<Link href="https://longnow.org/talks/02007-tetlock/" className="underline hover:text-fg-violet transition-colors">hedgehog</Link>-like&apos; in Finnish.
                   </p>
                 </div>
@@ -74,14 +74,14 @@ export default function AboutPage() {
             <div className="bg-bg-white p-8 rounded-xl">
               <h3 className="text-xl md:text-2xl font-bold text-fg-violet mb-3">Software That Works</h3>
               <p className="text-sm md:text-base text-fg-gray">
-                I&apos;ve built, deployed, and maintained systems for <Link href="https://www.nomentia.com/" className="underline hover:text-fg-violet transition-colors">fintech</Link>, <Link href="https://www.epic.com/" className="underline hover:text-fg-violet transition-colors">healthcare</Link>, and <Link href="https://www.teleste.com/" className="underline hover:text-fg-violet transition-colors">transportation</Link> companies. Complex problems, 
+                I&apos;ve built, deployed, and maintained systems for <Link href="https://www.nomentia.com/" className="underline hover:text-fg-violet transition-colors">fintech</Link>, <Link href="https://www.epic.com/" className="underline hover:text-fg-violet transition-colors">healthcare</Link>, and <Link href="https://www.teleste.com/" className="underline hover:text-fg-violet transition-colors">transportation</Link> companies. Complex problems,
                 practical solutions. No PowerPoints, just code that ships.
               </p>
             </div>
             <div className="bg-bg-white p-8 rounded-xl">
               <h3 className="text-xl md:text-2xl font-bold text-fg-violet mb-3">Tools That Matter</h3>
               <p className="text-sm md:text-base text-fg-gray">
-                Sometimes I build things because they should exist. Like <Link href="https://taskusanakirja.com/" className="underline hover:text-fg-violet transition-colors">Taskusanakirja</Link> - a Finnish-English dictionary 
+                Sometimes I build things because they should exist. Like <Link href="https://taskusanakirja.com/" className="underline hover:text-fg-violet transition-colors">Taskusanakirja</Link> - a Finnish-English dictionary
                 that actually works the way language learners need it to.
               </p>
             </div>
@@ -95,21 +95,21 @@ export default function AboutPage() {
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 bg-fg-seafoam rounded-full flex-shrink-0 mt-1"></div>
               <p className="text-sm md:text-base text-fg-gray">
-                <span className="font-medium text-fg-violet">Clear thinking:</span> Technical work doesn&apos;t have to be opaque. 
+                <span className="font-medium text-fg-violet">Clear thinking:</span> Technical work doesn&apos;t have to be opaque.
                 Good code explains itself.
               </p>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 bg-fg-seafoam rounded-full flex-shrink-0 mt-1"></div>
               <p className="text-sm md:text-base text-fg-gray">
-                <span className="font-medium text-fg-violet">Practical solutions:</span> I don&apos;t over-engineer. 
+                <span className="font-medium text-fg-violet">Practical solutions:</span> I don&apos;t over-engineer.
                 The best solution is usually the simplest one that actually works.
               </p>
             </div>
             <div className="flex items-start gap-3">
               <div className="w-6 h-6 bg-fg-seafoam rounded-full flex-shrink-0 mt-1"></div>
               <p className="text-sm md:text-base text-fg-gray">
-                <span className="font-medium text-fg-violet">Long-term thinking:</span> Code should be maintainable. 
+                <span className="font-medium text-fg-violet">Long-term thinking:</span> Code should be maintainable.
                 The person maintaining it six months from now might be you (or me).
               </p>
             </div>
