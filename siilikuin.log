@@ -1,0 +1,513 @@
+commit 77c8fd6c7a33bdd3ff51311b4fa46def7548a0ad
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Tue Aug 19 08:38:32 2025 +0300
+
+    chore: slight edit
+
+commit 62ba6442835de3c46f643be12d551614e27c84cd
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 21:00:18 2025 +0300
+
+    fix: Use CSS variables for mobile gradient background
+    
+    - Replace hardcoded colors with CSS variables (--bg-base, --bg-violet)
+    - Ensures gradient respects light/dark mode color scheme
+
+commit 9e92484f12a84859f1df3e9c184bb17b2f7b5de4
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 20:59:54 2025 +0300
+
+    fix: Remove clouds entirely on mobile, use static purple gradient
+    
+    - Completely disable cloud animations on mobile devices
+    - Add static purple gradient background for mobile
+    - Should completely resolve scrolling performance issues
+
+commit 8f39831a658a00b884f54fffa269cd84a8d2f599
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 20:53:06 2025 +0300
+
+    fix: Keep cloud animations on mobile with reduced count
+    
+    - Show only 5 clouds on mobile instead of disabling entirely
+    - Slow down animation speed on mobile for better performance
+    - Maintains visual appeal while improving scroll performance
+
+commit 129996b45ec9c94632daa3ef4193c69456cc35cb
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 20:52:52 2025 +0300
+
+    fix: Improve mobile performance and reduce font sizes
+    
+    - Disabled cloud animations on mobile devices to fix slow scrolling
+    - Reduced font sizes across all pages for better mobile readability
+    - Updated all headings, paragraphs, and UI elements with responsive sizing
+    - Smaller fonts on mobile (text-sm/text-base) with original sizes on desktop (md:text-lg/md:text-xl)
+
+commit 50afd447c1961f15969f4ba4759e88841102b936
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 20:38:56 2025 +0300
+
+    feat: Update page titles to use Siilikuin branding
+    
+    - Changed default title from 'Create Next App' to 'Siilikuin'
+    - Added title template for page-specific titles (Siilikuin | Page Name)
+    - Updated site description to reflect actual business
+    - Added metadata exports to all static pages (About, Services, Resources, Software, Case Studies)
+
+commit 5b61d58acd3bdbbe207cf878f7b69447c7dd3c92
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 20:20:47 2025 +0300
+
+    Fix Next.js Image component for static export
+    
+    Add images.unoptimized: true to next.config.ts to ensure images work correctly with GitHub Pages static hosting
+
+commit 3ca589263391c58373832334488b37ebb9927272
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 20:12:30 2025 +0300
+
+    Configure Next.js for static export and add GitHub Pages deployment workflow
+    
+    - Add output: 'export' to next.config.ts for static site generation
+    - Fix ESLint errors (unescaped apostrophes) in about and software pages
+    - Create GitHub Actions workflow for automatic deployment to Pages
+    - Site will build static HTML into 'out' directory for GitHub Pages hosting
+
+commit ff7b267c4b62f8a0b7038d63411a50b25da2f06e
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 20:07:54 2025 +0300
+
+    Create nextjs.yml
+
+commit 1ec6a9fb81b2db1f89905d2912e849e8966ad55a
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 20:00:11 2025 +0300
+
+    feat: Enhance About page and simplify site structure
+    
+    - Add hyperlinks to Epic (healthcare), Nomentia (fintech), and Teleste (transportation)
+    - Update intro to "Hi, I'm Andrew Quinn. Siilikuin (pronounced SEELIE-Quinn) is where I build software"
+    - Split company structure info into separate, smaller paragraph
+    - Emphasize "highly regulated industries where the cost of a single software bug can be catastrophic"
+    - Highlight full lifecycle experience: "built, deployed, and maintained systems"
+    - Apply same intro text to landing page for consistency
+    - Clear Case Studies page content with "Nothing here yet! But there will be"
+    - Remove Blog section entirely from navigation and delete blog page
+
+commit ee84a3eadcdc819a43332007fbb9e0568e65fbf1
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 15:27:36 2025 +0300
+
+    refactor: Simplify homepage intro and expand About page details
+    
+    - Simplified homepage intro to just "Siilikuin (pronounced SEELIE-Quinn)"
+    - Moved full etymology explanation to About page as image caption under mascot
+    - Added company structure information (LLC and toiminimi) to About page
+    - Added dual citizenship and Finland location context
+
+commit 068a989657439d21cc382d992b7986d38aa91ac6
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 15:19:32 2025 +0300
+
+    refactor: Remove client solicitation messaging and unpublish process page
+    
+    - Updated homepage copy to remove explicit client-focused messaging
+    - Changed "My client process" button to "What I've built" linking to /software
+    - Removed "Process" from navigation header and footer
+    - Unpublished /process page by renaming to _process
+    - Updated About page: "What I Do" → "What I Build", "How I Work" → "My Approach"
+    - Maintained contact options while toning down active client solicitation
+
+commit 48af87ecdd8932b73ab8498ab384e6de5882d279
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:46:32 2025 +0300
+
+    feat: Add case study publication to Phase 2 offering
+    
+    - Explicitly request permission to publish sanitized roadmaps as case studies
+    - Clarified this portfolio-building justifies the low €250 price
+    - Changed cost description to "discounted price in exchange for case study rights"
+    - Makes the value exchange transparent: low price for portfolio content
+
+commit 73315d14a1e45eb19752d8c462bfec4ddd7cdac7
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:37:27 2025 +0300
+
+    fix: Update headline to include planning aspect
+    
+    - Changed "I build" to "I plan and build"
+    - Better reflects dual nature of services (technical roadmaps and development)
+
+commit 2b0fb06d1631be0a4184dfe9c2038ba16f54c1e0
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:36:05 2025 +0300
+
+    fix: Be explicit about day job and time constraints
+    
+    - Removed "best thinking outside 9-to-5 chaos" line
+    - Added clear statement about having a day job
+    - Emphasized only taking on what can be delivered in available timeframe
+
+commit fb3885099ac2711fb22278ef5a65c1360c43ce5d
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:13:00 2025 +0300
+
+    fix: Clarify service offering for external clients
+    
+    - Added "For external clients," prefix to technical roadmap delivery
+    - Distinguishes between internal product development and client consulting work
+
+commit 996f369405c726c356436c26f36c87f567ac6b08
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:12:29 2025 +0300
+
+    fix: Align homepage messaging with actual service offering
+    
+    - Changed "I ship actual working software, not slide decks"
+    - To "I deliver actionable technical roadmaps that lead to working software"
+    - Better reflects that main product is technical planning documents
+
+commit 0d067469835048671562b450efe4e6839c26a68a
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:09:56 2025 +0300
+
+    fix: Clarify Phase 2 post-delivery support terms
+    
+    - Specified 30-day support window after delivery
+    - Clarified email-based support up to 2 hours total
+    - Emphasized this helps teams without requiring retainer
+
+commit 835d58e152570e3cd8265ea714b5c943f9ffd97a
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:08:59 2025 +0300
+
+    fix: Clarify Phase 2 time commitment
+    
+    - Changed "about a day's worth" to "about 8-10 hours"
+    - Made clear this is spread across evenings and weekends
+
+commit 188b1f71a86422dde7017378bff80e35d52cf849
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:04:03 2025 +0300
+
+    fix: Remove language homepage links, keep boring technology link
+    
+    - Removed links from Go, Python, TypeScript
+    - Kept link on "whatever you're already using" to Choose Boring Technology article
+
+commit e0383566e618c1e0363df910e1e77601e198e12c
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:02:32 2025 +0300
+
+    feat: Add links to programming language homepages
+    
+    - Linked Go to go.dev
+    - Linked Python to python.org
+    - Linked TypeScript to typescriptlang.org
+    - Linked "whatever you're already using" to Choose Boring Technology article
+
+commit cbf6fd44482e2a19d5d17b255fd8b1e90de6780c
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:01:46 2025 +0300
+
+    feat: Simplify CTA section messaging
+    
+    - Streamlined headline to be more direct
+    - Simplified description focusing on practical help
+    - Maintained consistent design and styling
+
+commit a677c8a290d9d94fc53e2c75765bcce203d3c36a
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:01:30 2025 +0300
+
+    fix: Improve cloud background animation performance
+    
+    - Adjusted opacity values for better visibility
+    - Refined animation durations
+    - Improved overall visual balance
+
+commit fade403845fc3d7e38409428d5d1d55eb2a40601
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:01:17 2025 +0300
+
+    feat: Update case studies page with cloud background
+    
+    - Added cloud background for visual consistency
+    - Minor text adjustment in introduction
+
+commit 429e5b69001deed7e4a575c75f2bf542a1fd8776
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:01:04 2025 +0300
+
+    feat: Create blog page with coming soon state
+    
+    - Added placeholder for future blog content
+    - Outlined three content areas: Building Products, Technical Deep Dives, Business of Software
+    - Included email subscription placeholder
+    - Added cloud background for consistency
+    - Simple CTA to contact via email
+
+commit 8567adc963e11f1587b9b03e79b72ea248301e56
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:00:51 2025 +0300
+
+    feat: Simplify about page with focused content
+    
+    - Added link to personal blog on Andrew Quinn name
+    - Removed generic corporate content
+    - Maintained background and approach sections
+    - Added cloud background for consistency
+    - Streamlined technology focus areas
+
+commit 2b2b5c34cf4c77ece1fef01effb08ba432a053c9
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:00:35 2025 +0300
+
+    feat: Redesign homepage with clearer value proposition
+    
+    - Simplified headline to focus on building useful software
+    - Added personal introduction with link to andrew-quinn.me
+    - Clarified service offering (own products vs client work)
+    - Emphasized practical, working software over presentations
+    - Listed preferred technology stack
+    - Streamlined call-to-action buttons
+
+commit a652f887150bcb13364699ced6db6a1be215229a
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 14:00:19 2025 +0300
+
+    feat: Update footer with new site structure
+    
+    - Changed tagline to "Cloud, compassion, code"
+    - Updated Links section to include all new pages
+    - Removed phone numbers, kept email and schedule call
+    - Updated copyright to 2022-2025
+    - Reordered contact info with Schedule call above email
+
+commit f8f377afc8510ea66dd34f2b60a4635ec0d19d31
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 13:59:59 2025 +0300
+
+    feat: Simplify header with expanded navigation
+    
+    - Reordered navigation: Software, Case Studies, Blog | About, Process, Contact
+    - Added "Cloud, compassion, code" tagline in seafoam color
+    - Styled Contact link in seafoam to distinguish it
+    - Maintained mobile hamburger menu functionality
+    - Removed complex dropdown menus for simpler navigation
+
+commit 2f220520d89b4f8dae32c3e329aae10762c50b70
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 13:58:47 2025 +0300
+
+    feat: Add software page showcasing commercial products
+    
+    - Featured Taskusanakirja Finnish-English dictionary
+    - Detailed tech stack and features
+    - Clear commercial product focus
+    - Call-to-action for potential product ideas
+
+commit 8b472abb680672af836b5981c62ab152e9c1f4c0
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 13:58:34 2025 +0300
+
+    feat: Add client process page with three-phase approach
+    
+    - Phase 1: Initial 30-minute consultation call
+    - Phase 2: Two-week technical roadmap planning (€250)
+    - Phase 3: Selective development (rarely undertaken)
+    - Added clouds background for consistency
+    - Clear, conversational tone explaining the working process
+
+commit bdefd839b3d6b0ba8cb435236039661af686cbcc
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Mon Aug 18 09:39:01 2025 +0300
+
+    feat: Redesign landing page with clearer value proposition
+    
+    - Centered hero content in viewport for better first impression
+    - Moved feature cards below the fold to prioritize main message
+    - Updated copy to emphasize expertise in regulated industries (fintech, healthcare, rail)
+    - Changed headline to "Reliable Software for Complex Environments"
+    - Replaced generic lorem ipsum with specific value proposition
+    - Added explicit technology stack: Go, Python, TypeScript
+    - Changed CTA from "Get Started" to "Let's talk" for friendlier engagement
+    - Created questionnaire page for lead qualification with 5 key questions
+    - Reordered questions to prioritize understanding support needs first
+    
+    The new messaging better communicates our niche: building maintainable software
+    for complex, regulated environments with deep infrastructure understanding.
+    
+    🤖 Generated with [Claude Code](https://claude.ai/code)
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 70143e3719b44774fd73512fb199473172324ce5
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 19:17:53 2025 +0300
+
+    fix: Remove transparency from mascot images and standardize button styles
+    
+    - Remove opacity classes from all Siilikuin mascot images
+    - Fix primary button colors to use consistent bg-bg-seafoam text-fg-seafoam
+    - Update home page to use extracted Footer and CTASection components
+    - Ensure all primary action buttons match "Contact Us Today" styling
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 9b391edc5b57961f253c76e510ce19e6c9632221
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 19:17:40 2025 +0300
+
+    feat: Add mobile navigation and improve header UX
+    
+    - Add responsive mobile menu with hamburger button
+    - Add "Menu"/"Close" text labels beside mobile toggle icon
+    - Update all navigation links to use Next.js Link component
+    - Add proper mobile drawer with language selector
+    - Improve hover states and transitions
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit d085a6671823501967d05faa4a06e12d80446de7
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 19:17:26 2025 +0300
+
+    feat: Add experimental city background animation
+    
+    - Create CityBackground component with animated cityscape
+    - Add city.css with custom animations
+    - Currently disabled in favor of cloud background
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 79e34b26e476f3d8914875e822b70a282c582945
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 19:17:13 2025 +0300
+
+    legal: Add proprietary LICENSE file
+    
+    - Add LICENSE file stating all rights reserved
+    - Establishes proprietary ownership of codebase
+    - No permissions granted for use, modification, or distribution
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 4b429b8b7ba94dc63d22d20911c0e2ab9b65d7e6
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 19:16:53 2025 +0300
+
+    feat: Add complete site pages with consistent branding
+    
+    - Add About page with team and company information
+    - Add Blog page with article listings and sidebar
+    - Add Case Studies page showcasing client success stories
+    - Add Resources page with documentation and tools
+    - Add Services page detailing offerings
+    - All pages use consistent Siilikuin branding and components
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 0891722afae79ca97db4b37d83708966dec7e950
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 19:16:38 2025 +0300
+
+    feat: Extract Footer and CTASection as reusable components
+    
+    - Create Footer component with company info and links
+    - Create CTASection component for consistent call-to-action
+    - Modularize components for better reusability across pages
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 3c402166c63e03870259840e039d26a62a5be4e5
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 18:26:21 2025 +0300
+
+    feat: Add professional header with navigation dropdowns and language selector
+    
+    - Created Header component with agency-style navigation bar
+    - Implemented dropdown menus for Services, Case Studies, Resources, and About sections
+    - Added language selector with English and Finnish options (Finnish ready for future content)
+    - Centered navigation menu with proper flexbox layout
+    - Integrated seamless lavender background matching site theme
+    - Allowed cloud animations to flow naturally through header
+    - Added lucide-react for dropdown chevron icons
+    - Implemented click-outside-to-close functionality for all dropdowns
+    - Applied consistent hover states and active styles using brand colors
+
+commit 27c6dc47057fd548a458d7033fb3737be1fb150f
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 18:00:25 2025 +0300
+
+    feat: Build Siilikuin landing page with brand integration
+    
+    - Integrated "Cloud, compassion, code" tagline throughout
+    - Added Siilikuin mascot to header, footer, and strategic locations
+    - Updated all color references to use new fg/bg system
+    - Implemented cloud background with proper z-indexing
+    - Created responsive layout with service cards and CTA sections
+    - Added Lorem Ipsum content for design visualization
+    
+    🤖 Generated with [Claude Code](https://claude.ai/code)
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 4f0f7abbfa8593119dc42e507ccc30087c20dbbb
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 18:00:16 2025 +0300
+
+    feat: Add animated cloud background system
+    
+    - Created dynamic cloud component with 12 unique shape variations
+    - Implemented parallax effect with 3 layers (back, mid, front)
+    - Added randomization for shape, color, size, and position on page load
+    - Created smooth drift animations in both directions
+    - Clouds use brand colors and maintain subtle transparency
+    
+    🤖 Generated with [Claude Code](https://claude.ai/code)
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 8291529f641bbbcff5aaaa12bf2361a6ec549b90
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 17:59:56 2025 +0300
+
+    feat: Add Siilikuin mascot and branding assets
+    
+    - Added siili.png mascot image (1024x1024)
+    - Created favicon from mascot image
+    - Placed mascot in public directory for web access
+    - Stripped metadata from images for optimization
+    
+    🤖 Generated with [Claude Code](https://claude.ai/code)
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit f695db50ac2a4dda82e63e097e6803a9bc9ea61a
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 17:59:36 2025 +0300
+
+    feat: Implement accessible color system with fg/bg separation
+    
+    - Created comprehensive color palette with foreground and background variants
+    - Ensured WCAG AA+ contrast ratios between all fg and bg color combinations
+    - Added seafoam color family to complement existing violet and gray tones
+    - Implemented dark mode color inversions
+    
+    🤖 Generated with [Claude Code](https://claude.ai/code)
+    
+    Co-Authored-By: Claude <noreply@anthropic.com>
+
+commit 3c4e2f565401abd0825456ecf95efff582ada123
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Sun Aug 17 16:15:54 2025 +0300
+
+    feat: First draft
+
+commit cdc4d611d3fa62418fa0dcd8449fc0b4b15f6ef9
+Author: Andrew Quinn <53230903+hiAndrewQuinn@users.noreply.github.com>
+Date:   Wed Jul 30 10:45:53 2025 +0300
+
+    Initial commit
