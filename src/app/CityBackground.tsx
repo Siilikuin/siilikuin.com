@@ -24,7 +24,7 @@ interface Building {
   windows: Window[];
 }
 
-function generateWindows(buildingWidth: number, buildingHeight: number): Window[] {
+function generateWindows(): Window[] {
   const windows: Window[] = [];
   const windowCount = Math.floor(Math.random() * 12) + 8; // 8-20 windows per building
   
@@ -63,7 +63,7 @@ function generateBuildings(): Building[] {
       layer: 'far',
       initialBottom: 60 + Math.random() * 40, // Start 60-100vh below viewport
       scrollMultiplier: 60 + Math.random() * 30, // Rise 60-90vh with scroll
-      windows: generateWindows(width, height)
+      windows: generateWindows()
     });
   }
 
@@ -79,7 +79,7 @@ function generateBuildings(): Building[] {
       layer: 'mid',
       initialBottom: 40 + Math.random() * 40, // Start 40-80vh below viewport
       scrollMultiplier: 50 + Math.random() * 30, // Rise 50-80vh with scroll
-      windows: generateWindows(width, height)
+      windows: generateWindows()
     });
   }
 
@@ -95,7 +95,7 @@ function generateBuildings(): Building[] {
       layer: 'near',
       initialBottom: 20 + Math.random() * 40, // Start 20-60vh below viewport
       scrollMultiplier: 40 + Math.random() * 30, // Rise 40-70vh with scroll
-      windows: generateWindows(width, height)
+      windows: generateWindows()
     });
   }
 

@@ -16,8 +16,9 @@ const CloudBackground = () => {
     delay: number; 
   }>>([]);
 
-  // Define various cloud shapes
-  const cloudShapes = [
+  useEffect(() => {
+    // Define various cloud shapes
+    const cloudShapes = [
     // Type 1: Tapered both ends
     (width: number, height: number) => `
       M ${width * 0.05} ${height * 0.8}
@@ -159,18 +160,17 @@ const CloudBackground = () => {
       Q ${width * 0.94} ${height * 0.45}, ${width * 0.94} ${height * 0.77}
       Z
     `,
-  ];
+    ];
 
-  const colors = [
-    'text-fg-violet',
-    'text-bg-seafoam', 
-    'text-bg-gray',
-    'text-bg-violet',
-    'text-fg-seafoam',
-    'text-fg-gray'
-  ];
+    const colors = [
+      'text-fg-violet',
+      'text-bg-seafoam', 
+      'text-bg-gray',
+      'text-bg-violet',
+      'text-fg-seafoam',
+      'text-fg-gray'
+    ];
 
-  useEffect(() => {
     // Generate random clouds on mount
     const generatedClouds = [];
     const numClouds = 15;
@@ -216,45 +216,11 @@ const CloudBackground = () => {
             animationDelay: `${cloud.delay}s`
           }}
         >
-          <defs>
-            <pattern 
-              id={`cloudGrain-${cloud.id}`} 
-              patternUnits="userSpaceOnUse" 
-              width="200" 
-              height="200"
-            >
-              <image 
-                href="/noise.svg" 
-                width="200" 
-                height="200" 
-                opacity="0.4"
-              />
-            </pattern>
-            <mask id={`cloudMask-${cloud.id}`}>
-              <path
-                d={cloud.shape(cloud.width, cloud.height)}
-                fill="white"
-              />
-            </mask>
-          </defs>
-          
           {/* Base cloud color */}
           <path
             d={cloud.shape(cloud.width, cloud.height)}
             fill="currentColor"
             className={cloud.color}
-          />
-          
-          {/* Grainy overlay */}
-          <rect 
-            width={cloud.width} 
-            height={cloud.height}
-            fill={`url(#cloudGrain-${cloud.id})`}
-            mask={`url(#cloudMask-${cloud.id})`}
-            style={{
-              mixBlendMode: 'multiply',
-              filter: 'contrast(150%) brightness(120%)'
-            }}
           />
         </svg>
       ))}

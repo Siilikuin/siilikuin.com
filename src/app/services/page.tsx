@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import CloudBackground from "../CloudBackground";
 import Header from "../../components/Header";
 import CTASection from "../../components/CTASection";
